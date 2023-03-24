@@ -1,3 +1,3 @@
 [submodule "echidna-vs-forge"]
 	path = echidna-vs-forge
-	url = git@github.com:baolean/echidna-vs-forge.git
+	url = https://github.com/baolean/echidna-vs-forge.git
