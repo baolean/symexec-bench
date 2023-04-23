@@ -1,3 +1,6 @@
 [submodule "echidna-vs-forge"]
 	path = echidna-vs-forge
 	url = https://github.com/baolean/echidna-vs-forge.git
+[submodule "SymTest/lib/forge-std"]
+	path = SymTest/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
