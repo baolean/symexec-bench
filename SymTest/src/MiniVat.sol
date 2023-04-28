@@ -14,6 +14,10 @@ contract MiniVat {
         rate = 10 ** 27;
     }
 
+    function getValues() external view returns (uint256, uint256, uint256) {
+        return (Art, rate, debt);
+    }
+
     function move(address dst, int256 wad) public {
         address src = msg.sender;
         dai[src] = wad > 0
