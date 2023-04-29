@@ -18,7 +18,7 @@ contract MiniVatTest is Test {
         vat.init();
 
         (uint Art, uint rate, uint debt) = vat.getValues();
-        assertEq(debt, rate * debt);
+        assertEq(debt, Art * rate);
     }
 
     function testInvariant_k(int x) public {
@@ -29,7 +29,7 @@ contract MiniVatTest is Test {
         vat.init();
 
         (uint Art, uint rate, uint debt) = vat.getValues();
-        assertEq(debt, rate * debt);
+        assertEq(debt, Art * rate);
     }
 
     function proveInvariant() public {
@@ -38,6 +38,6 @@ contract MiniVatTest is Test {
         vat.init();
 
         (uint Art, uint rate, uint debt) = vat.getValues();
-        assertEq(debt, rate * debt);
+        assertEq(debt, Art * rate);
     }
 }
