@@ -20,6 +20,13 @@ contract FooBytesTest is Test {
         a.revertIfCracked();
     }
 
+    function proveFuzz_cracked(bytes32 x, bytes32 y) public {
+        a.foo(x);
+        a.bar(y);
+        a.revertIfCracked();
+    }
+
+    /*
     function testFuzz_cracked_k(bytes32 x, bytes32 y) public {
         setUp();
 
@@ -27,10 +34,5 @@ contract FooBytesTest is Test {
         a.bar(y);
         a.revertIfCracked();
     }
-
-    function proveFuzz_cracked(bytes32 x, bytes32 y) public {
-        a.foo(x);
-        a.bar(y);
-        a.revertIfCracked();
-    }
+    */
 }
