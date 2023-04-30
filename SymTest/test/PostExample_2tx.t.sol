@@ -9,18 +9,19 @@ contract PostExampleTwoTest is Test {
 
     function setUp() public {
         example = new PostExample();
-        // example.setLive(true);
+        example.setLive(true);
     }
 
-    function testBackdoor(uint256 x) public {
-        // (bool isLive, uint256 x)
-        // example.setLive();
+    function testBackdoor(uint256 x) public view {
         example.backdoor(x);
     }
 
-    function proveBackdoor(uint256 x) public {
-        // (bool isLive, uint256 x)
-        // example.setLive(isLive);
+    function testBackdoor_k(uint256 x) public {
+        setUp();
+        example.backdoor(x);
+    }
+
+    function proveBackdoor(uint256 x) public view {
         example.backdoor(x);
     }
 }

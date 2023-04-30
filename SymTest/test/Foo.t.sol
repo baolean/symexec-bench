@@ -20,7 +20,7 @@ contract FooTest is Test {
         a.revertIfCracked();
     }
 
-    function testFuzz_cracked_K(uint256 x, uint256 y) public {
+    function testFuzz_cracked_k(uint256 x, uint256 y) public {
         setUp();
 
         a.foo(x);

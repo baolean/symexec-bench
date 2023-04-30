@@ -11,7 +11,7 @@ contract PostExampleTest is Test {
         example = new PostExample();
     }
 
-    function testBackdoor(uint256 x) public {
+    function testBackdoor(uint256 x) public view {
         example.backdoor(x);
     }
 
