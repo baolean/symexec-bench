@@ -43,11 +43,11 @@ contract MiniVatTest is Test {
     }
 
     function testCounterexample() public {
-        example.counterexample();
+        vat.counterexample();
     }
 
     function proveCounterexample() public {
-        example.counterexample();
+        vat.counterexample();
     }
     */
 }
